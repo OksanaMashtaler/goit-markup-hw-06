@@ -391,20 +391,22 @@
         </ul>
       </div>
 
-      <div class="footer-form">
-        <div class="form-field">
-          <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
-          <label for="mail" class="footer-form-label">Почта</label>
-          <input type="email" class="footer-form-input" name="mail" id="mail">
-          <button type="submit" class="footer-button">Подписаться</button>
-          <svg class="footer-form-icon" width="24" height="24">
-            <use href="./images/sprite/icons.svg#signup"></use>
-          </svg>
+      <form class="footer-form">
 
+        <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+        <div class="footer-form-field">
+          <label for="mail" class="footer-form-label"></label>
+          <input type="email" class="footer-form-input" name="mail" id="mail" placeholder="E-mail">
+          <button type="submit" class="footer-button">
+            <span class="subscribe">Подписаться</span>
+            <svg class="footer-form-icon" width="24" height="24">
+              <use href="./images/sprite/icons.svg#signup"></use>
+            </svg>
+          </button>
 
         </div>
 
-      </div>
+      </form>
     </div>
   </footer>
 
@@ -433,7 +435,7 @@
         <div class="form-field">
           <label for="mail" class="form-label">Почта</label>
           <input type="email" class="form-input" name="mail" id="mail">
-          <svg class="form-icon" width="18" height="15">
+          <svg class="form-icon" width="15" height="12">
             <use href="./images/sprite/icons.svg#formmail"></use>
           </svg>
         </div>
@@ -445,8 +447,13 @@
         </div>
 
         <div class="checkbox-field">
-          <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-          <input type="checkbox" name="policy" id="policy">
+          <label class="text-contract" for="policy">Соглашаюсь с рассылкой и принимаю <span
+              class="form-contract">Условия
+              договора</span></label>
+          <input type="checkbox" name="policy" id="policy" class="checkbox">
+          <svg class="icon-check" width="15" height="12">
+            <use href="./images/sprite/icons.svg#check"></use>
+          </svg>
 
         </div>
 

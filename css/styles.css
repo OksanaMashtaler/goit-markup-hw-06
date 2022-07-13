@@ -521,12 +521,71 @@ p {
 }
 
 .footer-form {
+  margin-left: 93px;
+}
+
+.footer-form-field {
+  display: flex;
 }
 
 .footer-form-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.footer-form input {
+  margin-top: 20px;
+  margin-right: 12px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+}
+
+.footer-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-input {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  border: none;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent-color);
+}
+
+.subscribe {
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 87;
+  padding-left: 28px;
+  margin-right: 10px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.footer-form-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  margin-right: 10px;
+}
+
+/* .footer-button {
   position: relative;
   background-color: #2196f3;
   width: 200px;
@@ -539,13 +598,13 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--accent-color);
-}
+} */
 
-.footer-form-icon {
+/* .footer-form-icon {
   position: absolute;
   top: 92px;
   left: 156px;
-}
+} */
 
 /* -----------portfolio------------------ */
 /* -----project section------- */
@@ -829,6 +888,32 @@ textarea {
   flex-direction: row-reverse;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.checkbox {
+  appearance: none;
+}
+
+.icon-check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.text-contract {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.checkbox:checked + .icon-check {
+  background-color: var(--brand-color);
+}
+
+.form-contract {
+  color: var(--brand-color);
+  text-decoration: underline;
 }
 
 .form-button {

@@ -886,25 +886,27 @@ textarea {
 .checkbox-field {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .checkbox {
   appearance: none;
+  position: relative;
 }
 
 .icon-check {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
+  position: absolute;
+  left: 50px;
+  bottom: 125px;
 }
 
 .text-contract {
-  display: flex;
-  flex-wrap: nowrap;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .checkbox:checked + .icon-check {
@@ -913,7 +915,6 @@ textarea {
 
 .form-contract {
   color: var(--brand-color);
-  text-decoration: underline;
 }
 
 .form-button {

@@ -775,8 +775,11 @@ p {
 
 .form-icon {
   position: absolute;
-  top: 32px;
-  left: 15px;
+  display: inline-block;
+  top: 50%;
+  left: 19px;
+
+  transform: translateY(50%);
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -816,9 +819,16 @@ textarea {
   outline: none;
 }
 
-.form-field input[type="checkbox"] {
+.checkbox-field input[type="checkbox"] {
   width: 16px;
   height: 15px;
+}
+
+.checkbox-field {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .form-button {
